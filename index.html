@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@500;800&family=Ubuntu:wght@400;500;700&  display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="generalStyle.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <title>Multi Step Form Main</title>
+    <script src="./generaleJavascript.js" defer></script>
+</head>
+<body>
+    <!-- a container for the form -->
+    <div class="container">
+        <!-- the header  -->
+    <section class="side-bar">
+        <!-- step 1 -->
+        <div class="step">
+            <!-- circle indicating the steps -->
+            <div>
+                <p id="step1">1</p>
+            </div>
+            <!-- additional details -->
+            <div class="step-about">
+                <p>STEP 1</p>
+                <h3>YOUR INFO</h3>
+            </div>
+        </div>
+        <!-- step 2 -->
+        <div class="step">
+            <!-- circle indicating the steps -->
+            <div>
+                <p id="step2">2</p>
+            </div>
+            <!-- additional details -->
+            <div class="step-about">
+                <p>STEP 2</p>
+                <h3>SELECT PLAN</h3>
+            </div>
+        </div>
+        <!-- step 3 -->
+        <div class="step">
+            <!-- circle indicating the steps -->
+            <div>
+                <p id="step3">3</p>
+            </div>
+            <!-- additional details -->
+            <div class="step-about">
+                <p>STEP 3</p>
+                <h3>ADD-ONS</h3>
+            </div>
+        </div>
+        <!-- step 4 -->
+        <div class="step">
+            <!-- circle indicating the steps -->
+            <div>
+                <p id="step4">4</p>
+            </div>
+            <!-- additional details -->
+            <div class="step-about">
+                <p>STEP 4</p>
+                <h3>SUMMARY</h3>
+            </div>
+        </div>
+    </section>
+        <!-- the main in a form -->
+    <section class="main">
+        <form action="" id = "regForm">
+            <div class="items">
+                <!-- the input part -->
+            <div class="inputs">
+                <!-- step 1 -->
+            <div class="tab1">
+                <h2>Personal info</h2>
+                <p>Please provide your name, email address, and phone number.</p>
+                <!-- input for the name -->
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="e.g. Stephen King" oninput="this.className = ''">
+                <!-- input for the email -->
+                <label for="name">Email Address</label>
+                <input id="mail" type="email" placeholder="e.g stephenking@lorem.com" oninput="this.className = ''">
+                <!-- input for the phone -->
+                <label for="name">Phone Number</label>
+                <input id="phone" type="tel" placeholder="e.g. +1 234 567 890" oninput="this.className = ''">
+            </div>
+                <!-- step 2 -->
+            <div class="tab2">
+                <h2>Select your plan</h2>
+                <p>You have the option of monthly or yearly billing.</p>
+                <div class="plans-div">
+                    <label>
+                        <input id="inputPlan1" type="checkbox">
+                        <div id="plan1" class="plans">
+                            <div>
+                                <img src="./assets/images/icon-arcade.svg" alt="icon-arcade">
+                            </div>
+                            <div class="details0">
+                                <h4>Arcade</h4>
+                                <p>$9/mo</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label>
+                        <input id="inputPlan2" type="checkbox">
+                        <div id="plan2" class="plans">
+                            <div>
+                                <img src="./assets/images/icon-advanced.svg" alt="icon-arcade">
+                            </div>
+                            <div class="details1">
+                                <h4>Advanced</h4>
+                                <p>$12/mo</p>
+                            </div>
+                        </div>
+                    </label>
+                    <label>
+                        <input id="inputPlan3" type="checkbox">
+                        <div id="plan3" class="plans">
+                            <div>
+                                <img src="./assets/images/icon-pro.svg" alt="icon-arcade">
+                            </div>
+                            <div class="details2">
+                                <h4>Pro</h4>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <!-- slider -->
+            <div class="sliderDiv">
+                <h4>Monthly</h4>
+                <label class="sliderContainer" for="switch">
+                <input type="checkbox" id="switch" name="switchBtn">
+                <span class="slider"></span>
+                </label>
+                <p>Yearly</p>
+            </div>
+            </div>
+                <!-- step 3 -->
+            <div class="tab3">
+                <h2>Pick add-on</h2>
+                        <p>Add-ons help enhance your gaming experience.</p>
+                        <!-- online service -->
+                <div class="addOns-div">
+                    <div id="online-service" class="add-ons">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="online" id="inService1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div id="serviceDet1">
+                            <h4>Online service</h4>
+                            <p> Access to multiplaye games</p>
+                        </div>
+                        <div class="inService1">
+                            <p>+$1/mo</p>
+                        </div>
+                    </div>
+                    <!-- larger-storage -->
+                    <div id="larger-storage" class="add-ons">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="online" id="inService2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div id="serviceDet2">
+                            <h4>Larger storage</h4>
+                            <p>Extra 1TB of cloud save</p>
+                        </div>
+                        <div class="inService2">
+                            <p>+$2/mo</p>
+                        </div>
+                    </div>
+                    <!-- custom service -->
+                    <div id="custom" class="add-ons">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="online" id="inService3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div id="serviceDet3">
+                            <h4>Customizable Profile</h4>
+                            <p>Custom theme on your profile</p>
+                        </div>
+                        <div class="inService3">
+                            <p>+$2/mo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- step 4 -->
+            <div class="tab4">
+                <h2>Finishing up</h2>
+                <p>Double-check everything looks OK before confirming.</p>
+                <div>
+                    <div class="selectedItems">
+                        <div id="selItStyle1" class="selItStyle">
+                            <div id="selItStyle1-1">
+                                <P></P>
+                            </div>
+                            <div id="selItStyle1-2">
+                                <P></P>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="selItStyle2-1" class="selItStyle">
+                                <P></P>
+                            </div>
+                            <div id="selItStyle2-2" class="selItStyle">
+                                <p></p>
+                            </div>
+                            <div id="selItStyle2-3" class="selItStyle">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="selItStyle3" class="selItStyle">
+                        <div id="selItStyle3-1">
+                            <p>Total (per month)</p>
+                        </div>
+                        <div id="selItStyle3-2">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Thanks Message -->
+            <div id="thanks-message" class="tab5">
+                <img src="./assets/images/icon-thank-you.svg" alt="Thanks">
+                <h2>Thank You</h2>
+                <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+            </div>
+            </div>
+            </div>
+        </form>
+        <!-- the buttons part -->
+        <div class="btnDiv">
+                <button class="button" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
+            <button class="button" type="button" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
+        </div>
+    </section>
+    </div>
+</body>
+</html>

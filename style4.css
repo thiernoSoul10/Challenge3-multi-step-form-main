@@ -1,0 +1,38 @@
+.selectedItems {
+  background-color: #f0f6ff;
+  border-radius: 5px;
+  min-height: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+.selItStyle {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px auto;
+  margin-bottom: 10px;
+}
+/* #selItStyle1-1, #setItStyle1-2 {
+  
+} */
+#selItStyle1 {
+  border-bottom: 1px solid #9699ab;
+  padding-bottom: 10px;
+}
+#selItStyle1 p {
+  color: #02295a; 
+  font-weight: 700;
+}
+#selItStyle1 button {
+  background-color: transparent;
+  border: none;
+  color: #9699ab;
+  font-weight: 500;
+  font-size: 16px;
+}
+#selItStyle1 button:hover {
+  cursor: pointer;
+}
+#selItStyle3 {
+  margin: 10px;
+  padding: 10px;
+}
