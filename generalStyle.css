@@ -5,7 +5,6 @@
 body {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10000px;
 }
  .items /* h2, h4, label */ {
     color: #02295a;
@@ -129,7 +128,7 @@ input.invalid {
         background-color: #f0f6ff;
     }
     .container {
-        margin-top: 50px;
+        margin-top: 40px;
         width: 1044px;
         display: flex;
         background-color: #fff;
@@ -155,11 +154,6 @@ input.invalid {
     .items {
         top: -20px;
     }
-    /* .inputs {
-        display: flex;
-        flex-direction: row;
-        padding: 10% 8%;
-    } */
     
     /* button part  */
     .btnDiv {
